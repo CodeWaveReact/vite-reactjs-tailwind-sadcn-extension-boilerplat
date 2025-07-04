@@ -1,10 +1,7 @@
+import React from "react";
 
 function App() {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-5">
-      <h1>hello</h1>
-    </div>
-  );
+  return <h1 className="p-10 text-red-500">Welcome</h1>;
 }
 
 export default App;

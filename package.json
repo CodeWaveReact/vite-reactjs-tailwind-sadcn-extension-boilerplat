@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "tailwind:watch": "tailwindcss -i ./src/styles/input.css -o ./build/output.css --watch",
-    "tailwind:build": "tailwindcss -i ./src/styles/input.css -o ./build/output.css"
+    "tailwind:build": "tailwindcss -i ./src/styles/globals.css -o ./build/output.css"
   },
   "dependencies": {
     "react": "^18.2.0",
