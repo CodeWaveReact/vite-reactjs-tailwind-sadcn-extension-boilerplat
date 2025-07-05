@@ -3,11 +3,8 @@
   "name": "Vite React Extension",
   "version": "1.0.0",
   "description": "Chrome Extension built with Vite, React, Tailwind CSS, and shadcn/ui",
-  "permissions": [
-    "activeTab",
-    "storage",
-    "scripting"
-  ],
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["scripting", "tabs", "storage"],
   "action": {
     "default_popup": "/src/popup/index.html"
   },
@@ -17,10 +14,11 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "type": "module"
     }
   ],
   "background": {
     "service_worker": "background.js"
   }
-} 
+}

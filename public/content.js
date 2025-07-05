@@ -1,8 +1,1 @@
-console.log('content.js loaded');
-
-
-
-
-
-
-
+console.log("Content script loaded");
